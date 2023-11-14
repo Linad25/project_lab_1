@@ -1,28 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtalk - Blog</title>
-    <link rel="stylesheet" href="../CSS/Blog.css">
+    <link rel="stylesheet" href="../src/CSS/Blog.css">
 <body>
-    <header>
-        <a href=""><img src="" alt=""></a>
-        <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__main">
+                <a href=""><img class="header__main-logo" src="../src/IMAGES/logo.svg" alt="logo"></a>
+                <nav class="header__main-nav">
+                    <a class="header__main-nav-link" href="">О нас</a>
+                    <a class="header__main-nav-link" href="">Тарифы</a>
+                    <a class="header__main-nav-link" href="">Для бизнеса</a>
+                    <a class="header__main-nav-link" href="">Психологам</a>
+                    <a class="header__main-nav-link" href="">Сертификат</a>
+                    <div class="header__main-nav-block">
+                        <a class="header__main-nav-link" href="">Материалы</a>
+                        <img class="header__main-nav-arrow" src="../src/IMAGES/arrow_down.svg" alt="arrow_down">
+                    </div>
+                    <a class="header__main-nav-link" href="">FAQ</a>
+                </nav>
+                <button class="header__main-but">Подобрать психолога</button>
+            </div>
         </div>
-        <button></button>
     </header>
-    <main>
-        <section></section>
-
+    <main class="main">
+        <div class="main__container container">
+            <section class="section-main">
+                <div class="section-main__map">
+                    <p class="section-main__map-item">Главная</p>
+                    <img class="section-main__map-arrow" src="../src/IMAGES/arrow_down.svg" alt="arrow_right">
+                    <p class="section-main__map-item">Блог</p>
+                </div>
+                <h1 class="section-main__blog">Блог</h1>
+                <div class="section-main__nav">
+                    <a  class="section-main__nav-item div" href="">
+                        <img src="../src/IMAGES/Smiling_Face.svg" alt="Smiling_Face">
+                        <p>Все</p>
+                    </a>
+                    <a class="section-main__nav-item" href=""><p>Самооценка и самопринятие</p></a>
+                    <a class="section-main__nav-item div active" href="">
+                        <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                        <p>Self</p>
+                    </a>
+                    <a class="section-main__nav-item" href=""><p>Чувства и эмоции</p></a>
+                    <a class="section-main__nav-item" href=""><p>Тревога</p></a>
+                    <a class="section-main__nav-item" href=""><p>Упражнения</p></a>
+                    <a class="section-main__nav-item" href=""><p>Психология питания</p></a>
+                    <a class="section-main__nav-item" href=""><p>Насилие</p></a>
+                    <a class="section-main__nav-item" href=""><p>Личное здоровье</p></a>
+                </div>
+            </section>
+            <section class="section-cards">
+                <a class="section-cards__card post-o">
+                    <div class="section-cards__card-img eggs">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Самооценка и самопринятие</p>
+                        </div>
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h3>
+                        <p class="section-cards__card-content-author" >Автор: Лиза Файнтухи</p>
+                        <p class="section-cards__card-content-cont">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                        <p class="section-cards__card-content-date">21.08.2021</p>
+                    </div>
+                </a>
+                <a class="section-cards__card post-t">
+                    <div class="section-cards__card-img run">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Как не утонуть в тревоге и управлять своими страхами</h3>
+                        <p class="section-cards__card-content-author">Автор: Екатерина Бельтюкова</p>
+                        <p class="section-cards__card-content-cont">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                        <p  class="section-cards__card-content-date">11.08.2021</p>
+                    </div>
+                </a>
+                <a class="section-cards__card post-th">
+                    <div class="section-cards__card-img eggs burnout">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Самооценка и самопринятие</p>
+                        </div>
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h3>
+                        <p class="section-cards__card-content-author">Автор: Лиза Файнтух</p>
+                        <p class="section-cards__card-content-cont">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                        <p class="section-cards__card-content-date">21.08.2021</p>
+                    </div>
+                </a>
+                <a class="section-cards__card post-f">
+                    <div class="section-cards__card-img swim">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Как не утонуть в тревоге и управлять своими страхами</h3>
+                        <p class="section-cards__card-content-author">Автор: Екатерина Бельтюкова</p>
+                        <p class="section-cards__card-content-cont">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                        <p class="section-cards__card-content-date">11.08.2021</p>
+                    </div>
+                </a>
+                <a class="section-cards__card post-fi">
+                    <div class="section-cards__card-img square">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Как управлять своими эмоциями:
+                            8 шагов</h3>
+                        <p class="section-cards__card-content-author">Автор: Екатерина Бельтюкова</p>
+                        <p class="section-cards__card-content-cont">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                        <p class="section-cards__card-content-date">07.08.2021</p>
+                    </div>
+                </a>
+                <a class="section-cards__card post-s">
+                    <div class="section-cards__card-img notebook-one">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h3>
+                        <p class="section-cards__card-content-author">Автор: Лиза Файнтух под редакцией  Екатерины Бельтюковой</p>
+                        <p class="section-cards__card-content-cont">Изначально термин «эмоциональное я...</p>
+                        <p class="section-cards__card-content-date">21.08.2021</p>
+                    </div>
+                </a>
+                <a  class="section-cards__card post-sev">
+                    <div class="section-cards__card-img notebook-two">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Как не утонуть в тревоге и управлять своими страхами</h3>
+                        <p class="section-cards__card-content-author">Автор: Екатерина Бельтюкова</p>
+                        <p class="section-cards__card-content-cont">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                        <p class="section-cards__card-content-date">11.08.2021</p>
+                    </div>
+                </a>
+                <a  class="section-cards__card post-e">
+                    <div class="section-cards__card-img communication">
+                        <div class="section-cards__card-field div">
+                            <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
+                            <p>Self</p>
+                        </div>
+                    </div>
+                    <div class="section-cards__card-content">
+                        <h3 class="section-cards__card-content-topic">Как управлять своими эмоциями:
+                            8 шагов</h3>
+                        <p class="section-cards__card-content-author">Автор: Екатерина Бельтюкова</p>
+                        <p class="section-cards__card-content-cont">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                        <p class="section-cards__card-content-date">07.08.2021</p>
+                    </div>
+                </a>
+            </section>
+            <button class="main__button">Ещё</button>
+        </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__container container">
+            <section class="foot-section-top" >
+                <div class="foot-section-top__left" >
+                    <div>
+                        <p><a href="" >О нас</a></p>
+                        <p><a href="" >Тарифы</a></p>
+                        <p><a href="" >Для бизнеса</a></p>
+                        <p><a href="" >Психологам</a></p>
+                        <p><a href="" >FAQ</a></p>
+                    </div>
+                    <div>
+                        <p><a href="" >Блог</a></p>
+                        <p><a href="" >Вебинары</a></p>
+                        <p><a href="" >Подкаст</a></p>
+                        <p><a href="" >Сертификат</a></p>
+                        <p><a href="" >Контакты</a></p>
+                    </div>
+                </div>
+                <div class="foot-section-top__middle">
+                    <h3>Одно письмо в неделю со свежими новостями и акциями</h3>
+                    <div>
+                        <input type="text" placeholder="Ваш e-mail" >
+                        <button><img src="../src/IMAGES/Airplane.svg" alt="Airplane"></button>
+                    </div>
+                    <p>Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
+                </div>
+                <div  class="foot-section-top__right">
+                    <img src="../src/IMAGES/SK.svg" alt="participant">
+                    <div>
+                        <a href="" target="_blank"><img src="../src/IMAGES/VK.svg" alt="VK" rel="nofollow"></a>
+                        <a href="" target="_blank"><img src="../src/IMAGES/TG.svg" alt="TG" rel="nofollow"></a>
+                        <a href="" target="_blank"><img src="../src/IMAGES/BD.svg" alt="BD" rel="nofollow"></a>
+                        <a href="" target="_blank"><img src="../src/IMAGES/FR.svg" alt="FR" rel="nofollow"></a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="">©Youtalk, 2018 – 2022</a>
+                <a href="">Юридические документы</a>
+                <a href="">Способы оплаты</a>
+            </section>
+        </div>
     </footer>
 </body>
-</html>
+</html>  
