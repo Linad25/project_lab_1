@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../src/CSS/Blog.css">
 <body>
     <header class="header">
-        <div class="header__container container">
+        <container class="header__container container">
             <div class="header__main">
                 <a href=""><img class="header__main-logo" src="../src/IMAGES/logo.svg" alt="logo"></a>
                 <nav class="header__main-nav">
@@ -22,12 +22,13 @@
                     </div>
                     <a class="header__main-nav-link" href="">FAQ</a>
                 </nav>
-                <button class="header__main-but">Подобрать психолога</button>
+                <button class="header__main-but-one">Подобрать психолога</button>
+                <button class="header__main-but-two"><img src="../src/IMAGES/Burger.svg" alt="Burger"></button>
             </div>
-        </div>
+        </container>
     </header>
     <main class="main">
-        <div class="main__container container">
+        <container class="main__container container">
             <section class="section-main">
                 <div class="section-main__map">
                     <p class="section-main__map-item">Главная</p>
@@ -87,7 +88,7 @@
                     </div>
                 </a>
                 <a class="section-cards__card post-th">
-                    <div class="section-cards__card-img eggs burnout">
+                    <div class="section-cards__card-img burnout">
                         <div class="section-cards__card-field div">
                             <img src="../src/IMAGES/Unicorn.svg" alt="Unicorn">
                             <p>Самооценка и самопринятие</p>
@@ -178,51 +179,49 @@
                 </a>
             </section>
             <button class="main__button">Ещё</button>
-        </div>
+        </container>
     </main>
     <footer class="footer">
-        <div class="footer__container container">
-            <section class="foot-section-top" >
-                <div class="foot-section-top__left" >
-                    <div>
-                        <p><a href="" >О нас</a></p>
-                        <p><a href="" >Тарифы</a></p>
-                        <p><a href="" >Для бизнеса</a></p>
-                        <p><a href="" >Психологам</a></p>
-                        <p><a href="" >FAQ</a></p>
+        <container class="footer__container container">
+            <section class="footer-section-top" >
+                    <div class="footer-section-top__left-column column">
+                        <p class="footer-section-top__left-column-item"><a href="" >О нас</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >Тарифы</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >Для бизнеса</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >Психологам</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >FAQ</a></p>
                     </div>
-                    <div>
-                        <p><a href="" >Блог</a></p>
-                        <p><a href="" >Вебинары</a></p>
-                        <p><a href="" >Подкаст</a></p>
-                        <p><a href="" >Сертификат</a></p>
-                        <p><a href="" >Контакты</a></p>
+                    <div class="footer-section-top__left-column column">
+                        <p class="footer-section-top__left-column-item"><a href="" >Блог</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >Вебинары</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >Подкаст</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >Сертификат</a></p>
+                        <p class="footer-section-top__left-column-item"><a href="" >Контакты</a></p>
                     </div>
+                <div class="footer-section-top__middle column">
+                    <h3 class="footer-section-top__middle-description">Одно письмо в неделю со свежими<br>новостями и акциями</h3>
+                    <div class="footer-section-top__middle-email">
+                        <input class="footer-section-top__middle-email-inp" type="text" placeholder="Ваш e-mail" >
+                        <button class="footer-section-top__middle-email-but"><img src="../src/IMAGES/Airplane.svg" alt="Airplane"></button>
+                    </div>
+                    <p class="footer-section-top__middle-condition">Подписываясь, я соглашаюсь на обработку персональных данных в<br> соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также c<br> Политикой конфиденциальности</p>
                 </div>
-                <div class="foot-section-top__middle">
-                    <h3>Одно письмо в неделю со свежими новостями и акциями</h3>
-                    <div>
-                        <input type="text" placeholder="Ваш e-mail" >
-                        <button><img src="../src/IMAGES/Airplane.svg" alt="Airplane"></button>
-                    </div>
-                    <p>Подписываясь, я соглашаюсь на обработку персональных данных в соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
-                </div>
-                <div  class="foot-section-top__right">
-                    <img src="../src/IMAGES/SK.svg" alt="participant">
-                    <div>
-                        <a href="" target="_blank"><img src="../src/IMAGES/VK.svg" alt="VK" rel="nofollow"></a>
-                        <a href="" target="_blank"><img src="../src/IMAGES/TG.svg" alt="TG" rel="nofollow"></a>
-                        <a href="" target="_blank"><img src="../src/IMAGES/BD.svg" alt="BD" rel="nofollow"></a>
-                        <a href="" target="_blank"><img src="../src/IMAGES/FR.svg" alt="FR" rel="nofollow"></a>
+                <div  class="footer-section-top__right column">
+                    <img class="footer-section-top__right-img-participant flex-grow-one" src="../src/IMAGES/SK.svg" alt="participant">
+                    <div class="footer-section-top__right-links-icons flex-grow-one">
+                        <a class="footer-section-top__right-link-icon-vk icon" href="" target="_blank"><img src="../src/IMAGES/VK.svg" alt="VK" rel="nofollow" width="20" height="12"></a>
+                        <a class="footer-section-top__right-link-icon-tg icon" href="" target="_blank"><img src="../src/IMAGES/TG.svg" alt="TG" rel="nofollow"></a>
+                        <a class="footer-section-top__right-link-icon-bd icon" href="" target="_blank"><img src="../src/IMAGES/BD.svg" alt="BD" rel="nofollow"></a>
+                        <a class="footer-section-top__right-link-icon-fr icon" href="" target="_blank"><img src="../src/IMAGES/FR.svg" alt="FR" rel="nofollow"></a>
                     </div>
                 </div>
             </section>
-            <section>
-                <a href="">©Youtalk, 2018 – 2022</a>
-                <a href="">Юридические документы</a>
-                <a href="">Способы оплаты</a>
+            <section class="footer-section-bottom">
+                <a class="footer-section-bottom__link" class href="">©Youtalk, 2018 – 2022</a>
+                <a class="footer-section-bottom__link" href="">Юридические документы</a>
+                <a class="footer-section-bottom__link" href="">Способы оплаты</a>
             </section>
-        </div>
+        </container>
     </footer>
 </body>
 </html>  
