@@ -790,8 +790,8 @@ p, h1, h3 {
   .section-main__nav {
     flex-wrap: nowrap;
     gap: 8px;
-    overflow-x: visible;
-    overflow: hidden;
+    overflow: visible;
+    overflow-x: auto;
   }
 
   .section-cards {
